@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JS/JQ 50 Exm</title>
+  <!-- icon css links -->
+  <link rel="stylesheet" href="css/all.min.css">
+ 
+  <!-- css links -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+  
+  <div class="container">
+    <!-- ex1 -->
+    <h2 class="text-danger">show the Date and time</h2>
+    <button type="button" class="btn btn-dark" onclick="showDate()">show Date</button>
+    <h3 id="s_date"></h3>
+
+    <!-- ex2 -->
+    <h2 class="text-success">show the light on/off</h2>
+
+    <button type="button" class="btn btn-dark" onclick="lightOn()">Turn on the light</button>
+
+    <img id="myImg" src="images/pic_bulboff.gif" width="100px">
+
+    <button type="button" class="btn btn-dark" onclick="lightOff()">Turn off the light</button>
+
+    <!-- ex3 -->
+    <h2>What Can JavaScript Do?</h2>
+
+    <button type="button" class="btn btn-dark" onclick="styleChange()">Click Me!</button>
+    <p id="demo">JavaScript can change the style of an HTML element.</p>
+
+    <!-- ex4 -->
+    <button type="button" class="btn btn-dark" onclick="styleChange2()">Click Me!</button>
+    <p id="demo2">JavaScript can change the style of an HTML element.</p>
+    <!-- ex5 -->
+    <button type="button" class="btn btn-dark" onclick="styleChange3()">Click Me!</button>
+    <p id="demo3" style="display: none;">JavaScript can change the style of an HTML element.</p>
+
+    <!-- ex6 -->
+    <h2>Demo JavaScript in Head</h2>
+    <button type="button" class="btn btn-primary" onclick="myFunction()">Try it</button>
+    <p id="demo4">A Paragraph.</p>
+
+    <!-- ex7 -->
+    <h2>JavaScript in Body</h2>
+    <p id="demo5"></p>
+
+    <!-- ex8 -->
+    <h2>My First Web Page</h2>
+    <p>My First Paragraph</p>
+    <p id="demo6"></p>
+
+    <!-- ex9 -->
+    <h2>My First Web Page</h2>
+    <p>My First Paragraph</p>
+    <button type="button" class="btn btn-primary" onclick="myFunction3()">Try it</button>
+    <p id="demo7"></p>
+
+    <!-- ex10 -->
+    <h2>My First Web Page</h2>
+    <p>My First Paragraph</p>
+    <button type="button" class="btn btn-primary" onclick="myFunction4()">Try it</button>
+    <!-- ex11 -->
+    <p>F12 on your keyboard will activate debugging.</p>
+    <p>Then select "Console" in the debugger menu.</p>
+    <p>Then click Run again.</p>
+    <button type="button" class="btn btn-primary" onclick="myFunction5()">Try it</button>
+
+    <!-- ex12 -->
+    <h2>print</h2>
+    <p>Click the button to print the current page.</p>
+    <button type="button" class="btn btn-dark" onclick="myFunction6()">Print this page</button>
+
+    <!-- ex13 -->
+    <h2>The var Keyword Creates Variables</h2>
+    <p id="demo13"></p>
+
+    <!-- ex14 -->
+    <h2>JavaScript const</h2>
+    <p id="demo14"></p>
+     <!-- ex15-->
+    <h2>JavaScript Number Methods</h2>
+    <p>The toPrecision() method returns a string, with a number written with a specified length:</p>
+    <p id="demo15"></p>
+    <!-- ex16 -->
+    <h2>Click the button to show the result</h2>
+    <button onclick="dataManipulate()" class="btn btn-dark">Result is - </button>
+    <h3 id="res"></h3>
+    <!-- ex17 -->
+    <h2>Click the button to show the mumber</h2>
+    <button onclick="dataManipulate1()" class="btn btn-dark">number1 is - </button>
+    <h3 id="number"></h3>
+
+    <!-- ex18 -->
+    <h2>Click the button to show the repeat text</h2>
+    <button onclick="dataRepeat()" class="btn btn-dark">Repeat</button>
+    <h3 id="rep">Reapet</h3>
+
+    <!-- ex19 -->
+    <h1>Click the button to show the result</h1>
+    <button onclick="resultComp()" class="btn btn-dark">result</button>
+    <h3 id="result19">valu is </h3>
+    <!-- ex20 -->
+    <h1>Adding a number and a string, returns a string</h1>
+    <button onclick="resultComp()" class="btn btn-dark">result</button>
+    <h3 id="result20">valu is </h3>
+
+    <!-- ex21 -->
+    <h1>JavaScript Booleans</h1>
+    <button onclick="boolValu()" class="btn btn-dark">Boolean</button>
+    <h3 id="bool">value of Boolean </h3>
+
+    <!-- ex22 -->
+    <h1>JavaScript Booleans null</h1>
+    <button onclick="boolValu()" class="btn btn-dark">Boolean null</button>
+    <h3 id="boolnull">value of Boolean null</h3>
+
+    <!-- ex23 -->
+    <h2>Input your age and click the button:</h2>
+    <button onclick="myFunction()" class="btn btn-dark">Try it</button>
+    <h3 id="demo23"></h3>
+
+    <!-- ex24 -->
+    <h2>Display "Good day!" if the hour is less than 18:00:</h2>
+    <p id="demo">Good Evening!</p>
+
+    <!-- ex25 -->
+    <h2>Display "Good day!</h2>
+    <p id="demo">Good day!</p>
+
+    <!-- ex26 -->
+    <h2>JavaScript For Loop</h2>
+    <h3 id="demo26"></h3>
+
+    <!-- ex27 -->
+    <h2>Call a function once for each array element:</h2>
+    <h3 id="demo27"></h3>
+
+    <!-- ex28 -->
+    <h2>Call a function once for while loop:</h2>
+    <h3 id="demo28"></h3>
+
+    <!-- ex29 -->
+    <h2>Call a function once for while loop:</h2>
+    <h3 id="demo29"></h3>
+
+    <!-- ex30 -->
+    <h2>Pass a parameter into the "age()" method.</h2>
+    <h3 id="demo30"></h3>
+
+    <!-- ex31 -->
+    <h2>the use it as a local variable:</h2>
+    <h3 id="demo31"></h3>
+
+    <!-- ex32 -->
+    <h2>This returns true (maybe not as expected)</h2>
+    <h3 id="demo32"></h3>
+
+    <!-- ex33 -->
+    <h2>This will work:</h2>
+    <h3 id="demo33"></h3>
+
+    <!-- ex34 -->
+    <h2>JavaScript Literal Constructors</h2>
+    <h3 id="demo34"></p>
+
+    <!-- ex35 -->
+    <h2>Setting a default value to a function parameter.</h2>
+    <h3 id="demo35"></h3>
+
+    <!-- ex36 -->
+    <h2>The best place to break a code line is after an operator or a comma.</h2>
+    <h3 id="demo36"></h3>
+
+    <!-- ex37 -->
+    <h2>Activate debugging in your browser (Chrome, IE, Firefox) with F12, and select "Console" in the debugger menu.</h2>
+
+    <!-- ex38 -->
+    <h2>Create Object from JSON String</h2>
+    <p id="demo38"></p>
+    
+    <!-- ex39 -->
+    <h2>JavaScript Modules</h2>
+    <h3 id="demo39"></h3>
+
+    <!-- ex40 -->
+    <h2>Creating two car objects from a car class:</h2>
+    <h3 id="demo40"></h3>
+
+    <!-- ex41 -->
+    <h2>This example shows an Arrow Function without the brackets or the return keyword.</h2>
+    <h3 id="demo41"></h3>
+
+    <!-- ex42 -->
+    <h2>JavaScript Hoisting</h2>
+    <p>With <b>let</b>, you cannot use a variable before it is declared.</p>
+    <p id="demo42"></p>
+
+    <!-- ex43 -->
+    <h2>Global "use strict" declaration.</h2>
+    <p>Activate debugging in your browser (F12) to see the error report.</p>
+
+    <!-- ex44 -->
+    <h2>JavaScript Scope</h2>
+    <p><b>carName</b> is undefined outside myFunction():</p>
+    <p id="demo441"></p>
+    <p id="demo442"></p>
+
+    <!-- ex45 -->
+    <h2>How to use <b>catch</b> to display an error.</h2>
+    <h3 id="demo45"></h3>
+
+    <!-- ex46 -->
+    <h2>Operator Precedence</h2>
+    <p>When many operations has the same precedence, they are computed from left to right.</p>
+    <p id="demo46"></p>
+
+    <!-- ex47 -->
+    <h1>JavaScript String Methods</h1>
+    <p>Search a string for "W3Schools", and display the position of the match:</p>
+    <p id="demo47"></p>
+
+    <!-- ex48 -->
+    <h2>The & Operator</h2>
+    <p id="demo48"></p>
+
+    <!-- ex49 -->
+    <h2>The ~ Operator</h2>
+    <p id="demo49"></p>
+
+    <!-- ex50 -->
+    <h2>Object Destructuring</h2>
+    <p id="demo50"></p>
+
+
+  <!-- js links -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
